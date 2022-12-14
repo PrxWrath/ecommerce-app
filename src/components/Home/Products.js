@@ -49,7 +49,7 @@ const Products = () => {
         {productsArr.map((product, index) => {
           return (
             <Card
-              className="shadow-sm m-1"
+              className="shadow m-1"
               style={{ width: "20vw" }}
               key={index}
             >

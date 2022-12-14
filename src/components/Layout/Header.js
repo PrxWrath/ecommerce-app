@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import HeaderCart from "./HeaderCart";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <Navbar expand="sm" variant="dark" bg="dark">
@@ -13,7 +13,7 @@ const Header = () => {
               <Nav.Link>Store</Nav.Link>
               <Nav.Link>About</Nav.Link>
             </Nav>
-            <HeaderCart />
+            <HeaderCart setShowCart = {props.setShowCart} />
         </Container>
       </Navbar>
     </>

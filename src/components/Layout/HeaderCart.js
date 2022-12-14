@@ -1,10 +1,10 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 
-const HeaderCart = () => {
+const HeaderCart = (props) => {
   return (
     <div className="d-flex my-1">
-      <Button variant="outline-info" size="md">
+      <Button onClick={()=>{props.setShowCart(true)}} variant="outline-info" size="md">
         Cart
       </Button>
       <sup
