@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Button } from "react-bootstrap";
-
+import Context from "../../store/Context"
 const HeaderCart = (props) => {
+  
+  const cartCtx = useContext(Context);
+  const itemCount = cartCtx.items.reduce((initial, item)=>{
+    return initial + item.amount
+  },0);
+
   return (
     <div className="d-flex my-1">
       <Button onClick={()=>{props.setShowCart(true)}} variant="outline-info" size="md">
@@ -20,7 +26,7 @@ const HeaderCart = (props) => {
           borderRadius: "8px",
         }}
       >
-        0
+       {itemCount}
       </sup>
     </div>
   );
