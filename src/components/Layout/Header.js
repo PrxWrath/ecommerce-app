@@ -10,9 +10,10 @@ const Header = (props) => {
         <Container>
             <Navbar.Brand href="/">TechStop.</Navbar.Brand>
             <Nav className="mx-auto">
-              <Nav.Link><NavLink exact to="/" style={{textDecoration:'none', color:'#ffffff'}}>Home</NavLink></Nav.Link>
-              <Nav.Link><NavLink exact to="/store" style={{textDecoration:'none', color:'#ffffff'}}>Store</NavLink></Nav.Link>
-              <Nav.Link><NavLink exact to="/about" style={{textDecoration:'none', color:'#ffffff'}}>About</NavLink></Nav.Link>
+              <><NavLink exact to="/" style={{textDecoration:'none', margin:'0.3rem', color:'#ffffff'}}>Home</NavLink></>
+              <><NavLink exact to="/store" style={{textDecoration:'none', margin:'0.3rem', color:'#ffffff'}}>Store</NavLink></>
+              <><NavLink exact to="/about" style={{textDecoration:'none', margin:'0.3rem', color:'#ffffff'}}>About</NavLink></>
+              <><NavLink exact to="/contact" style={{textDecoration:'none', margin:'0.3rem', color:'#ffffff'}}>ContactUs</NavLink></>
             </Nav>
             <HeaderCart setShowCart = {props.setShowCart} />
         </Container>

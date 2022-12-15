@@ -77,8 +77,8 @@ const Products = () => {
               <Card.Img variant="top" src={product.imageUrl} style={{width:'100%', height:'350px'}}/>
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
-                <Card.Text className="d-flex justify-content-between">
-                  <p className="fw-bold">{`Price: Rs.${product.price}`}</p>
+                <Card.Text className="d-flex justify-content-between fw-bold">
+                  {`Price: Rs.${product.price}`}
                   <Button onClick={()=>{addToCartHandler(product)}} variant="outline-danger">+ Add to Cart</Button>
                 </Card.Text>
               </Card.Body>

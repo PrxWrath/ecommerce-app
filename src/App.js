@@ -7,6 +7,7 @@ import Home from "./components/Main/Home";
 import Cart from "./components/Cart/Cart";
 import About from "./components/Info/About";
 import ContextProvider from "./store/ContextProvider";
+import Contact from "./components/Info/Contact";
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path="/"><Home/></Route>
           <Route exact path="/store"><Products /></Route>
           <Route exact path="/about"><About/></Route>
+          <Route exact path="/contact"><Contact/></Route>
         </Switch>
       </ContextProvider>
     </BrowserRouter>
