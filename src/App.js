@@ -20,7 +20,7 @@ const App = () => {
         <Cart showCart={showCart} setShowCart={setShowCart} />
         <Switch>
           <Route exact path="/"><Home/></Route>
-          <Route exact path="/store"><Products /></Route>
+          <Route exact path="/store"><Products setShowCart={setShowCart}/></Route>
           <Route exact path="/about"><About/></Route>
           <Route exact path="/contact"><Contact/></Route>
         </Switch>

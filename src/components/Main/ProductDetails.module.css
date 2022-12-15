@@ -1,0 +1,10 @@
+.zoom{
+    overflow: hidden;
+    width: 40%;
+    height: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.zoom:hover{
+    transform: scale(1.3);
+}
