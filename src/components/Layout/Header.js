@@ -13,6 +13,7 @@ const Header = (props) => {
               <><NavLink exact to="/" style={{textDecoration:'none', margin:'0.5rem', color:'#ffffff'}}>Home</NavLink></>
               <><NavLink exact to="/store" style={{textDecoration:'none', margin:'0.5rem', color:'#ffffff'}}>Store</NavLink></>
               <><NavLink exact to="/about" style={{textDecoration:'none', margin:'0.5rem', color:'#ffffff'}}>About</NavLink></>
+              <><NavLink exact to="/auth" style={{textDecoration:'none', margin:'0.5rem', color:'#ffffff'}}>Login</NavLink></>
               <><NavLink exact to="/contact" style={{textDecoration:'none', margin:'0.5rem', color:'#ffffff'}}>ContactUs</NavLink></>
             </Nav>
             <HeaderCart setShowCart = {props.setShowCart} />

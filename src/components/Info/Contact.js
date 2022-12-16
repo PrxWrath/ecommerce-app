@@ -56,7 +56,7 @@ const Contact = () => {
         Contact Info
       </h3>
       <Form
-        className="border border-danger w-50 mx-auto rounded my-2 p-2 "
+        className="shadow-lg border border-info w-50 mx-auto rounded my-2 p-2 bg-dark text-light"
         onSubmit={formSubmitHandler}
       >
         <Form.Group className="mb-3" controlId="fullName">
@@ -80,9 +80,12 @@ const Contact = () => {
           </Form.Text>
         </Form.Group>
 
-        <Button variant={valid?"primary":"danger"} type="submit">
-          Submit Details
-        </Button>
+        <div className="my-2 w-100 text-center">       
+          <Button variant={valid?"info":"danger"} type="submit">
+            Submit Details
+          </Button>
+        </div>
+ 
       </Form>
       {successAlert&&<Alert className="w-50 mx-auto" variant="success">Your contact info has been received!</Alert>}
     </Container>

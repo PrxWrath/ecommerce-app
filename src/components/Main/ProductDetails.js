@@ -10,6 +10,7 @@ const ProductDetails = (props) => {
         <Card.Img
           variant="top"
           src={product.imageUrl}
+          style={{width:'300px', height:'400px'}}
           className={`overflow-hidden mx-auto ${classes.zoom}`}
         />
         <Card.Title>{product.title}</Card.Title>
