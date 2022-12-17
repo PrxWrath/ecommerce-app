@@ -66,7 +66,6 @@ const Products = (props) => {
       id: product.id,
       title: product.title,
       price: product.price,
-      amount: Number(1),
       imageUrl: product.imageUrl,
     };
     cartCtx.addItem(item);

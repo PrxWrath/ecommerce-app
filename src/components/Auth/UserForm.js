@@ -32,12 +32,12 @@ const UserForm = () => {
             }
             })
             const data = await res.json();
-
+            
             if(res.ok){
-            authCtx.userLogin(data.idToken);
-            history.replace('/store');
+              authCtx.userLogin(data.idToken, data.email);
+              history.replace('/store');
             }else{
-            throw new Error(data.error.errors[0].message)
+              throw new Error(data.error.errors[0].message)
             }
 
             emailRef.current.value = '';
@@ -66,7 +66,7 @@ const UserForm = () => {
         if(!res.ok){  
           throw new Error(data.error.errors[0].message)
         }else{
-          authCtx.userLogin(data.idToken)
+          authCtx.userLogin(data.idToken, data.email)
           history.replace('/store');
         }
 

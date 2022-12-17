@@ -3,10 +3,10 @@ import React from 'react'
 const Context = React.createContext({
     isLoggedIn: false,
     logInToken: null,
-    userLogin: (token)=>{},
+    userLogin: (token, email)=>{},
     userLogout: ()=>{},
-    items: [],
-    totalAmt: 0,
+    items:[],
+    totalAmount:0,
     addItem: (item)=>{},
     removeItem: (item)=>{}
 })

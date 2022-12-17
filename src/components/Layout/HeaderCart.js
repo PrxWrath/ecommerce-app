@@ -4,8 +4,8 @@ import Context from "../../store/Context"
 const HeaderCart = (props) => {
   
   const cartCtx = useContext(Context);
-  const itemCount = cartCtx.items.reduce((initial, item)=>{
-    return initial + item.amount
+  const itemCount = cartCtx.items.reduce((initial)=>{
+    return initial+1
   },0);
 
   return (
