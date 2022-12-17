@@ -72,7 +72,7 @@ const Products = (props) => {
   };
 
   return (
-    <Container>
+    <Container className='p-3'>
       {product ? (
         <ProductDetails product={product} setProduct={setProduct} addToCart={addToCartHandler} />
       ) : (
